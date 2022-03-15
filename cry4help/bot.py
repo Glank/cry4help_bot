@@ -26,6 +26,7 @@ class Bot:
       'title': submission.title,
       'selftext': submission.selftext,
       'url': submission.url,
+      'created_utc': submission.created_utc,
       'author': {
         'id': submission.author.id,
         'comment_karma': submission.author.comment_karma,
