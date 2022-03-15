@@ -28,6 +28,3 @@ class Database:
       ''')
       for row in result:
         yield json.loads(row[1])
-
-def foo():
-  print("reached.")

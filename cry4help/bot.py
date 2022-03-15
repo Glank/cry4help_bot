@@ -19,6 +19,8 @@ class Bot:
         break
   @staticmethod
   def read_submission(submission):
+    if submission.author is None:
+      raise RuntimeError('Could not fetch author.')
     data = {
       'id': str(submission.id),
       'title': submission.title,
